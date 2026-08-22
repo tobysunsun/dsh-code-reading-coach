@@ -5,6 +5,18 @@
   "type": "module",
   "main": "lib/index.js",
   "license": "MIT",
+  "sideEffects": false,
+  "files": [
+    "lib",
+    "preset",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "homepage": "https://github.com/tobysunsun/dsh-code-reading-coach",
   "keywords": [
     "deepseek",
     "harness",
@@ -17,6 +29,12 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tobysunsun/dsh-code-reading-coach.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tobysunsun/dsh-code-reading-coach/issues"
+  },
+  "scripts": {
+    "check": "node scripts/check.mjs"
   },
   "peerDependencies": {
     "@deepseek-ai/cordis": "^4.0.1",
