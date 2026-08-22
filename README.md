@@ -1,5 +1,7 @@
 # dsh-code-reading-coach · 代码研读教练
 
+[![license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE) [![plugin](https://img.shields.io/badge/dsh-plugin-dsh--plugin-blue.svg)](https://github.com/topics/dsh-plugin)
+
 一个 DeepSeek Harness **Agent 预设**：交互式引导你研读论文对应的开源代码。
 
 读 AI/软件论文时，论文结构是固定的，开源仓库却各不相同、常常不知从何入手。代码研读教练用**五段研读法**带你一步步看懂：先明确告知代码用的是什么语言与框架架构（并确认你是否熟悉），再把「论文讲的东西」逐条映射到「代码里的实现」，最后跑起来验证——让你从「不知道从哪入手」到「讲得出整个系统的故事」。
@@ -40,6 +42,8 @@ dsh plugin --profile web add github:tobysunsun/dsh-code-reading-coach
 - **费曼检查点** —— 深潜前先让你用自己的话讲一遍，讲不通就降档重讲；
 - **代码与论文矛盾时显式标记** —— 这是最有价值的时刻；
 - **产出物持续沉淀**到工作区 `<仓库名>-notes.md`，跨会话接着读。
+
+> 想先看一次完整产出的样子？见 [examples/note-example.md](examples/note-example.md)。
 
 ## 常见问题
 
