@@ -46,6 +46,13 @@ dsh plugin --profile web add github:tobysunsun/dsh-code-reading-coach
 
 `lib/index.js` 的逻辑改动只影响安装/同步行为；别在 `lib/` 里放用户能改到的方法论文本。
 
+## 校验 / CI / 示例
+
+- 运行 `npm run check`（或 `node scripts/check.mjs`）校验预设三件套、JS 语法与
+  `cordis.patch.yml` 形状。
+- 推送 `main` 后 GitHub Actions 自动跑同样的检查（见 `.github/workflows/ci.yml`）。
+- 一份五段研读法的完整参考产出见 `examples/note-example.md`。
+
 ## 发布到 awesome-dsh-plugin 精选列表
 
 让插件出现在 [awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin)
