@@ -1,0 +1,12 @@
+# awesome-dsh-plugin registry 提交条目
+# 提交方式：fork https://github.com/awesome-dsh-plugin/awesome-dsh-plugin，
+# 把本文件添加到 data/plugins/tobysunsun__dsh-code-reading-coach.yml，
+# 运行 `node scripts/generate-readme.mjs` 刷新 README，然后提 PR。
+# 硬性门槛（自动检查）：仓库须声明 dsh.bundle（已满足）、
+# 仓库创建 >1 天 且 ≥10 次提交、带 dsh-plugin topic（已满足）。
+url: https://github.com/tobysunsun/dsh-code-reading-coach
+name: tobysunsun/dsh-code-reading-coach
+category: tools
+description:
+  en: Interactive code-reading coach for DeepSeek Harness: a five-phase guided method to study the source behind a paper, framework-aware and architecture-aware.
+  zh: 代码研读教练：交互式引导研读论文对应的开源代码。五段研读法（锚定论文主张、地形扫描、入口追踪、核心映射、闭环验证），自动识别并告知语言的框架与架构，适合研读 AI 论文源码。
