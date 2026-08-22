@@ -1,0 +1,4 @@
+# dsh bundle patch: installs the code-reading-coach agent preset.
+- insert:
+    - id: code-reading-coach-installer
+      name: 'dsh-code-reading-coach'
