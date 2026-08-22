@@ -7,12 +7,16 @@
 ## 安装
 
 ```bash
-# 从 GitHub 安装（推荐）
-dsh plugin --profile <你的profile> add github:tobysunsun/dsh-code-reading-coach
+# 从 GitHub 安装（推荐）—— 默认 profile（web）可直接复制运行：
+dsh plugin --profile web add github:tobysunsun/dsh-code-reading-coach
 
-# 或从 npm registry 安装（发布后可用）
-dsh plugin --profile <你的profile> add dsh-code-reading-coach
+# 或从 npm registry 安装（发布后可用）：
+dsh plugin --profile web add dsh-code-reading-coach
 ```
+
+> 用非默认 profile 启动 dsh 的用户（如 `dsh --profile tui`）请把命令中的 `web`
+> 换成自己的 profile 名；不确定时执行 `ls ~/.dsh/profiles` 查看。
+> 想锁定版本可 pin 提交：`github:tobysunsun/dsh-code-reading-coach#<commit-sha>`。
 
 安装后**重启 dsh**（插件在启动时把预设文件同步到 `~/.dsh/.agent-presets/code-reading-coach/`），
 然后新建会话，在预设选择器中选择「代码研读教练」。
@@ -52,8 +56,10 @@ dsh plugin --profile <你的profile> add dsh-code-reading-coach
 ## 卸载
 
 ```bash
-dsh plugin --profile <你的profile> remove dsh-code-reading-coach
+dsh plugin --profile web remove dsh-code-reading-coach
 ```
+
+（非默认 profile 同上，把 `web` 换成你的 profile 名。）
 
 卸载**不会**自动删除预设目录（避免误删你改过的文件），如需移除：
 
@@ -77,7 +83,11 @@ dsh-code-reading-coach/
 ```
 
 改方法论请编辑 `preset/reading-method.mjs` 中的 `SECTION_TEXT`；改预设组合编辑
-`preset/agent.cordis.yml`。提交后升级：`dsh plugin --profile <profile> add github:tobysunsun/dsh-code-reading-coach`（或重新 install 同版本以刷新）。
+`preset/agent.cordis.yml`。提交后升级（默认 profile 直接复制运行）：
+
+```bash
+dsh plugin --profile web add github:tobysunsun/dsh-code-reading-coach
+```
 
 ## 许可
 
